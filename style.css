@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: white !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+#bowl {
+    width: 440px;
+    height: 440px;
+    background-color: transparent;
+    border-radius: 50%;
+    top: 60px;
+    margin: 5px 35px 0 0;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.ball {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.ballBars {
+    opacity: 0.4;
+}
+
+img#startButtonSphere {
+    position: absolute;
+    top: 210px;
+    left: -97px;
+    z-index: 10000;
+}
+
+.ballsContainer {
+    position: absolute;
+    z-index: 2;
+    right: -255px;
+    top: 20px;
+}
+
+.ball h2 {
+    transform: rotate(260deg);
+}
+
+.ballContainerParent {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    top: 340px;
+    left: -16px;
+    z-index: 2;
+}
+
+.ballContainer {
+    position: absolute;
+    top: 140px;
+    left: -180px;
+    z-index: 45;
+}
+
+div#ballContainer {
+    left: 220px;
+    position: absolute;
+    top: 440px;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+#pipeBallParent {
+    z-index: 2;
+    top: 60px;
+    width: 440px;
+    height: 440px;
+    left: -236px;
+    right: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    /* background: red; */
+}
+
+.pipeBall {
+    width: 50px;
+    height: 0px;
+    background: rgba(190, 190, 190, 0.46);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.9px);
+    -webkit-backdrop-filter: blur(6.9px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.barsContainer {
+    height: 315px;
+    left: 359px;
+    position: absolute;
+    top: 148px;
+    display: flex;
+    gap: 10px;
+}
+
+.fanParent {
+    position: absolute;
+    top: 372px;
+    left: -130px;
+}
+
+.fan{
+    opacity: 0;
+    background-color: transparent;
+}

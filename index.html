@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lotto Machine | Lottery</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Structure -->
+    <div style="display: flex; justify-content: center; position: relative;">
+        <img style="position: absolute; z-index: 3;" src="./assets/sphere_front.png" alt="" />
+        <img style="position: absolute; z-index: 1;" src="./assets/sphere_back.png" alt="" />
+
+        <div id="barsContainerParent">
+            <div class="barsContainer"></div>
+        </div>
+
+        <img onclick="starter()" id="startButtonSphere" src="./assets/button.png" />
+
+        <!-- Balls -->
+        <div class="ballsContainer" style="position: absolute; z-index: 2;">
+            <canvas id="matter-canvas"></canvas>
+        </div>
+
+        <!-- Pipe -->
+        <div id="pipeBallParent">
+            <div class="pipeBall"></div>
+        </div>
+
+        <!-- BarsBalls -->
+        <div id="bowl" style="position: absolute; z-index: 2;">
+            <div id="ballContainer"></div>
+        </div>
+
+        <!-- Fan -->
+        <div class="fanParent">
+            <img class="fan" id="fanId" src="./assets/fan1.png">
+        </div>
+    </div>
+
+    <audio id="audioPlayer" src="./audio/balls.mp3"></audio>
+
+    <!-- @imports -->
+    <script src="./js/matter.js"></script>
+    <script src="./js/ball.js"></script>
+    <script src="./js/reveal.js"></script>
+    <script src="./js/pipe.js"></script>
+    <script src="./js/audio.js"></script>
+    <script src="./js/fan.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/MotionPathPlugin.min.js"></script>
+</body>
+
+</html>
